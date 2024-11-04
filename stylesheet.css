@@ -1,0 +1,138 @@
+html{
+    height: 100%;
+}
+h3{
+    font-family:'Playfair Display';
+}
+body{
+    font-family:"Roboto","Playfair Display","Open Sans";
+    margin: 0px;
+    font-size: 1.1em;
+    background-image: url(images/resort2.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-areas: "header header header"
+    "intro intro intro" 
+    "img1 img2 img3"
+    "outro outro outro"
+    "footer footer footer";
+    grid-template-rows: 0.75fr 2fr 4.5fr 2fr 0.75fr;
+}
+.h{
+    font-family:"Lobster", "Pacifico";
+    background: linear-gradient(to right, brown, green);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    font-size: 20px;
+    
+}
+.i{
+    font-family:"Lobster", "Pacifico";
+    //background: linear-gradient(to right, hsl(51, 100%, 50%), black);
+    background: linear-gradient(to right,#a65926 ,#3d6fdc );
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    font-size: 20px;
+}
+.j{
+    font-family:"Lobster", "Pacifico";
+    background: linear-gradient(to right, hsl(195, 53%, 50%),red);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    font-size: 20px;
+}
+header{
+    background-color:hsl(0, 0%, 50%, 0.6);
+    text-align: center;
+    gap: 10px;
+    display: grid;
+    grid-area: header;
+    font-family:"Roboto";
+    grid-template-areas: "about home heading book signin";
+    grid-template-columns: 0.25fr 0.25fr 2fr 0.25fr 0.25fr;
+}
+#heading{
+    background: linear-gradient(to right, hsl(351, 100%, 60%),lightyellow, hsl(195, 53%, 70%), hsl(0, 0%, 70%));
+    font-family: "Lobster";
+    background-clip: text;
+    color: transparent;
+    grid-area: heading;
+}
+.headerele{
+    align-self:center;
+    font-size: 1.2em;
+    font-weight:500;
+}
+main{
+    display: grid;
+    grid-template-areas:"intro intro intro"
+    "img1 img2 img3"
+    "des1 des2 des3";
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-row: 2/5;
+    grid-column: 1/4;
+    gap: 10px;
+    background-color: hsl(0, 0%, 95%, 0.25);
+}
+.img{
+    height:350px;
+    place-self: center;
+    border-radius: 10px;
+}
+.img1{
+    grid-area: img1;
+}
+.img2{
+    grid-area: img2;
+}
+.img3{
+    grid-area: img3;
+}
+.desc{
+    font-weight: 550;
+    text-align: center;
+    background-color: hsl(0, 0%, 90%, 0.5);
+    color: hsl(0, 0%, 0%);
+    border-radius: 20px;
+    text-decoration: none;
+}
+#d1{
+    grid-area: des1;
+}
+#d2{
+    grid-area: des2;
+}
+#d3{
+    grid-area: des3;
+}
+footer{
+    background-color:hsl(0, 0%, 50%, 0.7);
+    text-align: center;
+    grid-area: footer;
+    font-weight:bold;
+}
+.desc:hover{
+    background-color:  hsl(0, 0%, 100%, 0.75);
+}
+.headerele{
+    text-decoration: none;
+    color: darkblue;
+}
+.headerele:hover{
+    color: blue;
+}
+#mail{
+    text-decoration:none;
+    color: darkblue;
+}
+#mail:hover{
+    color:blue;
+}
